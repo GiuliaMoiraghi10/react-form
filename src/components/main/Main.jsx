@@ -7,6 +7,11 @@ import { posts } from '../../posts.js'
 //stampo solo post pubblici
 const pubPosts = posts.filter((post) => post.published === true)
 
+function addPost(e) {
+    e.preventDefault()
+    console.log('Aggiungi post')
+}
+
 export default function Main() {
 
     return (
@@ -14,7 +19,7 @@ export default function Main() {
             <section className={style.container}>
                 <h1 className={style.title_blog}>Il mio blog</h1>
                 <div className={style.container}>
-                    <form className={style.form} action="">
+                    <form className={style.form} action="" onSubmit={addPost}>
                         <input className={style.post_form} type="text" placeholder='Nuovo Post' />
                         <input className={style.submit_form} type="submit" value='Aggiungi' />
                     </form>
