@@ -1,0 +1,24 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.title_blog {
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.raw {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_4 {
+    width: calc(100% / 3);
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
