@@ -14,9 +14,9 @@ export default function Main() {
             <section className={style.container}>
                 <h1 className={style.title_blog}>Il mio blog</h1>
                 <div className={style.container}>
-                    <form action="">
-                        <input type="text" placeholder='Nuovo Post' />
-                        <input type="submit" value='Aggiungi' />
+                    <form className={style.form} action="">
+                        <input className={style.post_form} type="text" placeholder='Nuovo Post' />
+                        <input className={style.submit_form} type="submit" value='Aggiungi' />
                     </form>
                     <div className={style.raw}>
                         {pubPosts.map(post => <div key={post.id} className={style.col_4}>
