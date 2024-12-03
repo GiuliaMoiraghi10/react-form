@@ -4,7 +4,7 @@
 
 //importo immagini
 import cover from './assets/sailor.jpg'
-import placeholder from './assets/placeholder.webp'
+import undefined from './assets/placeholder.webp'
 
 export const posts = [
 	{
@@ -19,7 +19,7 @@ export const posts = [
 	{
 		id: 2,
 		title: 'Sailor Mercury',
-		image: placeholder /* compila questo campo */,
+		image: undefined /* compila questo campo */,
 		content:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
 		tags: ['js', 'css'],
@@ -37,7 +37,7 @@ export const posts = [
 	{
 		id: 4,
 		title: 'Sailor Jupiter',
-		image: placeholder /* compila questo campo */,
+		image: undefined /* compila questo campo */,
 		content:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
 		tags: ['html'],

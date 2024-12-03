@@ -1,8 +1,9 @@
 import image from '../../../assets/sailor.jpg'
 import Button from '../card/Button'
 import style from './Card.module.css'
+import ButtonTrash from '../card/ButtonTrash'
 
-export default function Card({ post = {} }) { //passo le props
+export default function Card({ onDelete = () => { }, post = {} }) { //passo le props
     // creo variabile destrutturando array di posts
     const { id, title, image, content, tags, published } = post
 
@@ -12,6 +13,10 @@ export default function Card({ post = {} }) { //passo le props
         css: '#FF00FF',
 
     }
+
+    // function callback() {
+    //     console.log('elimina')
+    // }
 
     return (
         <div className={style.card}>
@@ -26,7 +31,12 @@ export default function Card({ post = {} }) { //passo le props
                     ))}
                 </ul>
                 <p className={style.description_card}>{content}</p>
-                <Button />
+                <div className={style.button_cta}>
+                    <Button />
+                    <div onClick={onDelete}>
+                        <ButtonTrash />
+                    </div>
+                </div>
             </div>
         </div>
     )
